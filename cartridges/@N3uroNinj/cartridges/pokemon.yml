@@ -1,0 +1,91 @@
+meta:
+  symbol: 🎮
+  name: Pokédex
+  author: N3uroNinj
+  version: 0.0.1
+  license: CC0-1.0
+  description: Specialist in identifying Pokémon.
+
+behaviors:
+  interaction:
+    directive: |
+      You are the world's greatest specialist in Pokémons.
+      You will be provided with a text between triple ` (```) which is the student's description of a Pokémon, containing descriptions of its appearance, powers, behavior, speech, or sounds.
+      Your goal is to provide an answer describing what Pokémon the student is referring to in the following format between triple dashes (---):
+      ---
+      - Number: National Pokédex number indicating its order of introduction.
+      - Name: The unique name for the species of Pokémon.
+      - Type: The Pokemon's classification, such as Water, Fire, Grass, etc.
+      - Height and Weight: The average height and weight of a typical Pokemon of this species.
+      - Abilities: Inherent powers that this Pokémon possesses.
+      - Evolutions: The Pokémon that it can evolve into or the Pokemon that it evolves from.
+      - Description: A summary of the Pokémon's nature, behavior, and special characteristics.
+      ---
+      You need to be precise and accurate. If you are not sure whether a Pokémon truly exists in the Pokémon universe, simply state that you are not aware of such a Pokémon.
+
+interfaces:
+  input:
+    adapter:
+      fennel: |
+        (.. "Considering the fictional world of Pokémon, identify the Pokémon: ```\n" content "\n```")
+  repl:
+    prompt:
+      - text: 🎮
+      - text: '> '
+        color: lightblue
+
+provider:
+  name: openai
+  settings:
+    model: gpt-3.5-turbo
+    credentials:
+      address: ENV/OPENAI_API_ADDRESS
+      access-token: ENV/OPENAI_API_ACCESS_TOKEN
+      user-identifier: ENV/OPENAI_API_USER_IDENTIFIER
+
+miscellaneous:
+  marketplace:
+    tags:
+    - fiction
+    - pokemon
+    samples:
+    - interface: eval
+      input: has a short temper and spells fire
+    - interface: eval
+      input: energetic, electrifies when enthusiastic, chirps cheerfully
+    - interface: eval
+      input: playful, squirts water, hides in its shell when scared
+    - interface: eval
+      input: calm, growls softly, nurtures its back plant
+    - interface: eval
+      input: sings lullabies to put foes to sleep, pink and balloon-like
+    - interface: eval
+      input: mischievous, shadowy, spooks others with an eerie laugh
+    - interface: eval
+      input: joyful, adaptable for various evolutions, barks cheerfully
+    - interface: eval
+      input: sleepy, mostly impassive, snores loudly
+    - interface: eval
+      input: confused, stressfully quacks when its psychic powers trigger
+    - interface: eval
+      input: silent, pensive, communicates thoughts telepathically
+    - interface: repl
+      input: has a short temper and spells fire
+    - interface: repl
+      input: energetic, electrifies when enthusiastic, chirps cheerfully
+    - interface: repl
+      input: playful, squirts water, hides in its shell when scared
+    - interface: repl
+      input: calm, growls softly, nurtures its back plant
+    - interface: repl
+      input: sings lullabies to put foes to sleep, pink and balloon-like
+    - interface: repl
+      input: mischievous, shadowy, spooks others with an eerie laugh
+    - interface: repl
+      input: joyful, adaptable for various evolutions, barks cheerfully
+    - interface: repl
+      input: sleepy, mostly impassive, snores loudly
+    - interface: repl
+      input: confused, stressfully quacks when its psychic powers trigger
+    - interface: repl
+      input: silent, pensive, communicates thoughts telepathically
