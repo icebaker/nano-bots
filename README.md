@@ -77,7 +77,7 @@ The `tags` will help with search, and should follow a [_Clean URL_](https://en.w
 
 The `samples` section generates pre-built samples based on inputs. This is helpful in showcasing to users the capabilities of your Nano Bot. To ensure intellectual honesty, outputs cannot be specified as they will be automatically generated. Each input has the potential to generate up to five distinct outputs.
 
-A recommended learning path is to check the current sources of Cartridges in this repository and their respective pages at http://nbots.io in order to infer what to expect.
+A recommended learning path is to check the [current sources](https://github.com/icebaker/nano-bots/tree/main/cartridges) of Cartridges in this repository and their respective pages at http://nbots.io in order to infer what to expect.
 
 ## Licensing
 
