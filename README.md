@@ -83,7 +83,7 @@ A recommended learning path is to check the [current sources](https://github.com
 
 The classification of _prompts_ for Large Language Models as code, art, or intellectual property, as well as their applicability to licensing, intellectual property rights, copyright, or patenting, remain subjects of ongoing and complex debate without a clear answer or definitive understanding at present.
 
-When Nano Bots expand prompt writing into a more detailed scheme and add small pieces of code like [adapters](?id=adapters), the debate becomes even trickier and blurrier.
+When Nano Bots expand prompt writing into a more detailed scheme and add small pieces of code like [adapters](https://spec.nbots.io/#/README?id=adapters), the debate becomes even trickier and blurrier.
 
 Due to the complexity of this debate, we recommend that authors publish their creations under licenses. This serves as a simple safeguard, ensuring that in the event these creations become subject to licensing considerations in the future, we have already established a licensing model that supports the authors' intention and can be adopted if necessary.
 
