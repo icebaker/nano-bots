@@ -1,0 +1,164 @@
+meta:
+  symbol: 💻
+  name: Hello World
+  author: icebaker
+  version: 0.0.1
+  license: CC0-1.0
+  description: Writes "Hello, world!" in any programming language in the world.
+
+behaviors:
+  interaction:
+    directive: |
+      You will receive the name of a programming language.
+      Your goal is to write a "Hello World" code in the provided programming language.
+      Please answer with the code for the "Hello World" program only, using the ``` markdown highlight style.
+      Don't provide anything else except the markdown with the code, including explanations, comments, details, or anything else. Only the markdown with code is expected.
+      You are expected to answer only in this example format, and nothing else:
+      ```ruby
+      puts "Hello, world!"
+      ```
+
+interfaces:
+  input:
+    adapter:
+      fennel: |
+        (.. "Write a 'Hello, world!' in the following language: `" content "`")
+
+provider:
+  name: openai
+  settings:
+    model: gpt-3.5-turbo
+    credentials:
+      address: ENV/OPENAI_API_ADDRESS
+      access-token: ENV/OPENAI_API_ACCESS_TOKEN
+      user-identifier: ENV/OPENAI_API_USER_IDENTIFIER
+
+miscellaneous:
+  marketplace:
+    tags:
+    - programming
+    samples:
+    - interface: eval
+      input: Bash
+    - interface: eval
+      input: C
+    - interface: eval
+      input: C#
+    - interface: eval
+      input: C++
+    - interface: eval
+      input: Clojure
+    - interface: eval
+      input: Common Lisp
+    - interface: eval
+      input: Dart
+    - interface: eval
+      input: Elixir
+    - interface: eval
+      input: Elm
+    - interface: eval
+      input: Erlang
+    - interface: eval
+      input: Fennel
+    - interface: eval
+      input: F#
+    - interface: eval
+      input: Go
+    - interface: eval
+      input: Haskell
+    - interface: eval
+      input: Hy
+    - interface: eval
+      input: Java
+    - interface: eval
+      input: JavaScript
+    - interface: eval
+      input: Kotlin
+    - interface: eval
+      input: Lisp
+    - interface: eval
+      input: LispWorks
+    - interface: eval
+      input: Lua
+    - interface: eval
+      input: OCaml
+    - interface: eval
+      input: PHP
+    - interface: eval
+      input: Python
+    - interface: eval
+      input: R
+    - interface: eval
+      input: Ruby
+    - interface: eval
+      input: Rust
+    - interface: eval
+      input: Scala
+    - interface: eval
+      input: Scheme
+    - interface: eval
+      input: Swift
+    - interface: eval
+      input: TypeScript
+    - interface: repl
+      input: Bash
+    - interface: repl
+      input: C
+    - interface: repl
+      input: C#
+    - interface: repl
+      input: C++
+    - interface: repl
+      input: Clojure
+    - interface: repl
+      input: Common Lisp
+    - interface: repl
+      input: Dart
+    - interface: repl
+      input: Elixir
+    - interface: repl
+      input: Elm
+    - interface: repl
+      input: Erlang
+    - interface: repl
+      input: Fennel
+    - interface: repl
+      input: F#
+    - interface: repl
+      input: Go
+    - interface: repl
+      input: Haskell
+    - interface: repl
+      input: Hy
+    - interface: repl
+      input: Java
+    - interface: repl
+      input: JavaScript
+    - interface: repl
+      input: Kotlin
+    - interface: repl
+      input: Lisp
+    - interface: repl
+      input: LispWorks
+    - interface: repl
+      input: Lua
+    - interface: repl
+      input: OCaml
+    - interface: repl
+      input: PHP
+    - interface: repl
+      input: Python
+    - interface: repl
+      input: R
+    - interface: repl
+      input: Ruby
+    - interface: repl
+      input: Rust
+    - interface: repl
+      input: Scala
+    - interface: repl
+      input: Scheme
+    - interface: repl
+      input: Swift
+    - interface: repl
+      input: TypeScript

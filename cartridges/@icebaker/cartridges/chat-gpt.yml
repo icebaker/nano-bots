@@ -1,0 +1,40 @@
+meta:
+  symbol: 🤖
+  name: ChatGPT 3.5 Turbo
+  author: icebaker
+  version: 0.0.1
+  license: CC0-1.0
+  description: Default ChatGPT experience.
+
+provider:
+  name: openai
+  settings:
+    model: gpt-3.5-turbo
+    credentials:
+      address: ENV/OPENAI_API_ADDRESS
+      access-token: ENV/OPENAI_API_ACCESS_TOKEN
+      user-identifier: ENV/OPENAI_API_USER_IDENTIFIER
+
+miscellaneous:
+  marketplace:
+    samples:
+    - interface: eval
+      input: hi!
+    - interface: eval
+      input: hello!
+    - interface: eval
+      input: who are you?
+    - interface: eval
+      input: what can you do?
+    - interface: eval
+      input: how are you doing?
+    - interface: repl
+      input: hi!
+    - interface: repl
+      input: hello!
+    - interface: repl
+      input: who are you?
+    - interface: repl
+      input: what can you do?
+    - interface: repl
+      input: how are you doing?
